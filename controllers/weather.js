@@ -9,8 +9,9 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res)=>{
   console.log(req.body.city, 'req.body')
-  res.send('hi')
+
   getWeather(res, req.body.city)
+
 })
 
 module.exports = router;

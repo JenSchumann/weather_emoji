@@ -4,15 +4,18 @@ const app = express();
 const mongoose = require('mongoose');
 const env = require('dotenv').config();
 const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
 
 
 //middleware
+app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-
-
+//controller
+const weather = require('./controllers/weather.js');
+  app.use('/weather', weather);
 
 
 
