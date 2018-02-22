@@ -1,0 +1,27 @@
+{
+  "name": "weather_emoji",
+  "version": "1.0.0",
+  "description": "#### **About:** Didn't your mama ever tell you not to bring up intense topics in public? Perhaps it's better to talk about the weather? Visit this web application, find the weather for a given city and express yourself about it with the selection of an emoji! Ready to get cheeky about the snowflakes piling up on your sidewalk?  Go shovel first!!!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenSchumann/weather_emoji.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JenSchumann/weather_emoji/issues"
+  },
+  "homepage": "https://github.com/JenSchumann/weather_emoji#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6",
+    "request": "^2.83.0"
+  }
+}
