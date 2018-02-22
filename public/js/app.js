@@ -45,7 +45,7 @@ app.controller('WeatherController', ['$http', function($http){
         }).then(
             function(response){
                 console.log(response, ' this is response from post')
-                controller.message = response.data.main.temp + " in " + response.data.name
+                controller.message = "It's currently " + response.data.main.temp + " in " + response.data.name
 
             },
             function(err){

@@ -9,6 +9,7 @@
     <!-- Fontawesome  -->
 
     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Denk+One|Englebert|Mouse+Memoirs|Palanquin+Dark|Rammetto+One" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -26,12 +27,25 @@
 
   </head>
   <body ng-controller="WeatherController as weather">
+    <!-- Background Image -->
+    <img class="main-img img-responsive" ng-if=!ctrl.loggedin src="./assets/pexels-photo-236970.jpeg"alt="Clouds"/>
     <!-- <h3>Looking out the window {{weather.precipitation}}</h3> -->
 
-    <input type="text" ng-model="weather.query" placeholder="City">
-      <button ng-click="weather.postWeather()">Find Weather by City</button>
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to WeMo!</h1>
+      <h4 class="lead">Practice civil pleasantry in the digital world at the same time that you find out what the weather is like in any city in the world!</h4>
+      <hr class="my-4">
 
+      <h4 class="lead">
+        <input type="text" ng-model="weather.query" placeholder="City">
+        <a class="btn btn-dark btn-lg" ng-click="weather.postWeather()" href="#" role="button">Find Weather by City</a>
+      </h4><br>
       <h1>{{weather.message}}</h1>
+    </div>
+
+      <!-- <button ng-click="weather.postWeather()">Find Weather by City</button> -->
+
+
       <!-- <button ng-click="weather.getWeather()">Get Weather</button> -->
 
 
