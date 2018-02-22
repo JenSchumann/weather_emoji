@@ -5,5 +5,12 @@ Didn't your mama ever tell you not to bring up intense topics in public? Perhaps
 
 #### **About:**
  - Practice for integrating 3rd party integration (OpenWeatherMap)
- 
+
 #### **Technology Used:**
+ - HTML5, CSS, JavaScript, JQuery, AngularJS, MongoDB, Mongoose, NodeJS, Express
+
+#### **Planned Features:**
+ - [x] Integrate 3rd party API from: https://openweathermap.org/
+ - [ ] Convert temperature from Kelvin to Fahrenheit before rendering it to the user
+ - [ ] Just for spits & tiggles: offer user the ability to select a visually rendered emoji to express how that weather temperature in the specified city **makes them feel**.
+ - [ ] Add a responsive UX design utilizing Bootstrap 4 
