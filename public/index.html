@@ -35,7 +35,7 @@
 
     <div class="jumbotron">
       <h1 class="display-4">Welcome to WeMo!</h1>
-      <h4 class="lead">Practice civil pleasantry in the digital world at the same time that you find out what the weather is like in any city in the world!</h4>
+      <h2 class="lead">Practice civil pleasantry in the digital world at the same time that you find out <br> what the weather is like in any city in the world!</h2>
       <hr class="my-4">
 
       <h4 class="lead">
@@ -44,8 +44,125 @@
       </h4><br>
       <h1>{{weather.message}}</h1><br>
 
-      <h4><a class="btn btn-dark btn-lg" href="#" role="button">Talk About the Weather</a></h4><br>
+      <h4><a class="btn btn-dark btn-lg" ng-click="weather.toggleNew();" href="#" role="button">Talk About the Weather</a></h4><br>
+
+
+      <br>
+
+      <!-- to express yourself with an emoji in reaction to the weather temp -->
+      <div ng-if="weather.emojiDisplay">
+
+    <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+
+      <li class="dropdown-header">Emoji Options</li>
+
+</button>
+
+
+
+<ul class="dropdown-menu">
+    <li>
+      <a href="#" title="Select this card"><img src="./assets/Smiley-1_48.png">yahtzee </a>
+    </li>
+  <div role="separator" class="dropdown-divider"></div>
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-2_48.png">two </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-3_48.png">three </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-4_48.png">four </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-6_48.png">five </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-7_48.png">six </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <!-- <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-8_48.png">seven </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-9_48.png">eight </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-10_48.png">nine </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div> -->
+
+          <!-- <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-11_48.png">ten </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-12_48.png">eleven </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-13_48.png">twelve </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-14_48.png">thirteen </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-15_48.png">fourteen </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-16_48.png">fifteen </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-17_48.png">sixteen</a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-18_48.png">seventeen </a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div>
+
+          <li>
+            <a href="#" title="Select this card"><img src="./assets/Smiley-19_48.png">eighteen</a>
+          </li>
+          <div role="separator" class="dropdown-divider"></div> -->
+
+          <!-- </li> -->
+        </ul>
+
+  <!-- </div> -->
+      </div> <!-- end weather.emojiDisplay -->
     </div>
+
+
+
 
 
 

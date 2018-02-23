@@ -54,4 +54,8 @@ app.controller('WeatherController', ['$http', function($http){
         );
     }
 
+    this.toggleNew = function(){
+      this.emojiDisplay = !this.emojiDisplay;
+    }
+
 }]); //end of WeatherController
